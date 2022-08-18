@@ -5,7 +5,8 @@
 - Git - GitHUb
 
 ## Semana 2
-
+- Programació orientada a objetos - repaso
+- Git - GitHUB
 
 
 

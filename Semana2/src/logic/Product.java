@@ -10,7 +10,8 @@ public class Product {
     private byte stockMin;
     private TypeProduct typeProduct;
 
-    public Product(String idProduct, String description, double value, int cant, byte stockMin, TypeProduct typeProduct) {
+    public Product(String idProduct, String description, double value, int cant,
+                   byte stockMin, TypeProduct typeProduct) {
         this.idProduct = idProduct;
         this.description = description;
         this.value = value;
@@ -22,47 +23,36 @@ public class Product {
     public String getIdProduct() {
         return idProduct;
     }
-
     public void setIdProduct(String idProduct) {
         this.idProduct = idProduct;
     }
-
     public String getDescription() {
         return description;
     }
-
     public void setDescription(String description) {
         this.description = description;
     }
-
     public double getValue() {
         return value;
     }
-
     public void setValue(double value) {
         this.value = value;
     }
-
     public int getCant() {
         return cant;
     }
-
     private void setCant(int cant) {
         this.cant = cant;
     }
-
     public byte getStockMin() {
         return stockMin;
     }
-
     public void setStockMin(byte stockMin) {
         this.stockMin = stockMin;
     }
-
     public TypeProduct getTypeProduct() {
         return typeProduct;
     }
-
     public void setTypeProduct(TypeProduct typeProduct) {
         this.typeProduct = typeProduct;
     }
@@ -70,7 +60,7 @@ public class Product {
     public double getIVA() {
         switch (typeProduct) {
             case VIVERES:
-                return getValue() * 0.12;
+                return getValue() * 0.14;
             case LICORES:
                 return getValue() * 0.19;
             case MEDICAMENTOS:

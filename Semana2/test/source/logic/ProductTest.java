@@ -11,6 +11,6 @@ class ProductTest {
     void getIVA() {
         Product product = new Product("1", "Viveras", 2500, 10, (byte)10,
                 TypeProduct.VIVERES);
-        assertEquals(300, product.getIVA());
+        assertEquals(350, product.getIVA());
     }
 }
