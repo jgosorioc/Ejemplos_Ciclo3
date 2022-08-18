@@ -1,19 +1,13 @@
 package logic;
 
+import java.lang.reflect.Array;
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class Bill {
     private String number;
-    private localDate dateBill;
-    private ArrayList<Datail>
+    private LocalDate dateBill;
+    private ArrayList<Detail> details;
 
-    public Bill(String number, localdate dateBill) {
-        this.number = number;
-        this.dateBill = dateBill;
-    }
 
-    public double getTotal() {
-
-        return 0;
-    }
 }

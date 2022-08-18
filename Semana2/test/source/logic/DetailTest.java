@@ -5,12 +5,18 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ProductTest {
+class DetailTest {
+    Detail detail;
 
-    @Test
-    void getIVA() {
+    void setup() {
         Product product = new Product("1", "Viveras", 3500, 10, (byte)10,
                 TypeProduct.VIVERES);
-        assertEquals(420, product.getIVA());
+        Detail detail = new Detail(product, (short)10);
+    }
+
+    @Test
+    void getSubTotal() {
+        setup();
+        assertEquals(39_200, detail.getSubTotal());
     }
 }
