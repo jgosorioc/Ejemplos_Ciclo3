@@ -41,7 +41,7 @@ public class Product {
     public int getCant() {
         return cant;
     }
-    private void setCant(int cant) {
+    public void setCant(int cant) {
         this.cant = cant;
     }
     public byte getStockMin() {
